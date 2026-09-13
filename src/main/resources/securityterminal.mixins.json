@@ -1,0 +1,31 @@
+{
+  "required": true,
+  "minVersion": "0.8.3",
+  "package": "net.styna.ae2securityterminal.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AEBaseMenuMixin",
+    "CableBusContainerMixin",
+    "CablePartMixin",
+    "ChestMonitorHandlerMixin",
+    "GridConnectionMixin",
+    "GridNodeMixin",
+    "InterfaceLogicAccessor",
+    "InWorldGridNodeMixin",
+    "LevelMixin",
+    "MEP2PTunnelPartMixin",
+    "MEStorageMenuMixin",
+    "MenuTypeBuilderMixin",
+    "NetworkStorageMixin",
+    "P2PTunnelPartMixin",
+    "PatternProviderTargetMixin",
+    "QuantumClusterMixin",
+    "SpatialIOPortBlockEntityMixin",
+    "StorageBusPartMixin",
+    "ToggleBusPartMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "model": {
+    "type": "securityterminal:biometric_card",
+    "base_model": "securityterminal:item/biometric_card",
+    "hash_sprite": "securityterminal:item/biometric_card_hash"
+  }
+}

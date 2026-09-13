@@ -1,0 +1,36 @@
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="StynaST"
+description='''
+AE2 Security terminal is a simple mod that ports the security terminal to all versions ae2 on 1.20.1+ since they removed it.
+
+wireless stuff will stay on the WAP instead of being moved to this security terminal.
+'''
+
+[[mixins]]
+config="${mod_id}.mixins.json"
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="ae2"
+    type="required"
+    versionRange="${ae2_version_range}"
+    ordering="AFTER"
+    side="BOTH"

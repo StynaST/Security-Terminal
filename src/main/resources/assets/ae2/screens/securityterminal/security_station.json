@@ -1,0 +1,75 @@
+{
+  "$schema": "../schema.json",
+  "includes": ["../terminals/base_terminal.json"],
+  "terminalStyle": {
+    "sortable": false,
+    "header": {
+      "texture": "securityterminal:textures/guis/security_station.png",
+      "srcRect": [0, 0, 195, 17]
+    },
+    "firstRow": {
+      "texture": "securityterminal:textures/guis/security_station.png",
+      "srcRect": [0, 17, 195, 18]
+    },
+    "row": {
+      "texture": "securityterminal:textures/guis/security_station.png",
+      "srcRect": [0, 35, 195, 18]
+    },
+    "lastRow": {
+      "texture": "securityterminal:textures/guis/security_station.png",
+      "srcRect": [0, 53, 195, 18]
+    },
+    "bottom": {
+      "texture": "securityterminal:textures/guis/security_station.png",
+      "srcRect": [0, 71, 195, 132]
+    }
+  },
+  "slots": {
+    "SECURITYTERMINAL_BIOMETRIC_CARD": {
+      "left": 37,
+      "bottom": 117
+    }
+  },
+  "text": {
+    "dialog_title": {
+      "text": {
+        "translate": "gui.securityterminal.Security"
+      },
+      "position": {
+        "left": 8,
+        "top": 6
+      }
+    },
+    "card_editor": {
+      "text": {
+        "translate": "gui.securityterminal.SecurityCardEditor"
+      },
+      "position": {
+        "left": 8,
+        "bottom": 128
+      }
+    }
+  },
+  "widgets": {
+    "permission_inject": {
+      "left": 56,
+      "bottom": 117
+    },
+    "permission_extract": {
+      "left": 74,
+      "bottom": 117
+    },
+    "permission_craft": {
+      "left": 92,
+      "bottom": 117
+    },
+    "permission_build": {
+      "left": 110,
+      "bottom": 117
+    },
+    "permission_security": {
+      "left": 128,
+      "bottom": 117
+    }
+  }
+}

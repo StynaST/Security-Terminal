@@ -1,0 +1,113 @@
+{
+  "parent": "minecraft:block/block",
+  "render_type": "cutout",
+  "textures": {
+    "side": "securityterminal:block/security_station_side",
+    "bottom": "securityterminal:block/security_station_bottom",
+    "top": "securityterminal:block/security_station_top",
+    "particle": "securityterminal:block/security_station_side",
+    "lights_bright": "ae2:part/terminal_bright",
+    "lights_medium": "ae2:part/terminal_medium",
+    "lights_dark": "ae2:part/terminal_dark"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "down": {
+          "texture": "#bottom",
+          "cullface": "down"
+        },
+        "up": {
+          "texture": "#top",
+          "cullface": "up"
+        },
+        "north": {
+          "texture": "#side",
+          "cullface": "north"
+        },
+        "south": {
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "east": {
+          "texture": "#side",
+          "cullface": "east"
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "up": {
+          "texture": "#lights_bright",
+          "tintindex": 3,
+          "cullface": "up"
+        }
+      },
+      "light_emission": 15
+    },
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "up": {
+          "texture": "#lights_medium",
+          "tintindex": 2,
+          "cullface": "up"
+        }
+      },
+      "light_emission": 15
+    },
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "up": {
+          "texture": "#lights_dark",
+          "tintindex": 1,
+          "cullface": "up"
+        }
+      },
+      "light_emission": 15
+    }
+  ]
+}
