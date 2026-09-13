@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "securityterminal:block/security_station_off",
+    "tints": [
+      {"type": "minecraft:constant", "value": -1},
+      {"type": "minecraft:constant", "value": -10860642},
+      {"type": "minecraft:constant", "value": -7250483},
+      {"type": "minecraft:constant", "value": -1924125}
+    ]
+  }
+}

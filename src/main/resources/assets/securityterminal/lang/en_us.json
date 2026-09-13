@@ -1,0 +1,18 @@
+{
+  "block.securityterminal.security_station": "ME Security Terminal",
+  "item.securityterminal.biometric_card": "Biometric Card",
+
+  "gui.securityterminal.security.extract.name": "Withdraw",
+  "gui.securityterminal.security.inject.name": "Deposit",
+  "gui.securityterminal.security.craft.name": "Craft",
+  "gui.securityterminal.security.build.name": "Build",
+  "gui.securityterminal.security.security.name": "Security",
+  "gui.securityterminal.security.extract.tip": "User is allowed to remove items from storage.",
+  "gui.securityterminal.security.inject.tip": "User is allowed to store new items into storage.",
+  "gui.securityterminal.security.craft.tip": "User can initiate new crafting jobs.",
+  "gui.securityterminal.security.build.tip": "User can modify the physical structure of the network, and make configuration changes.",
+  "gui.securityterminal.security.security.tip": "User can access and modify the security terminal of the network.",
+  "gui.securityterminal.NoPermissions": "No Permissions Selected",
+  "gui.securityterminal.SecurityCardEditor": "Biometric Card Editor",
+  "gui.securityterminal.Security": "Security Term"
+}
