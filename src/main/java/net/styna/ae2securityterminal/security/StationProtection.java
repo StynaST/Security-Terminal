@@ -62,6 +62,7 @@ public final class StationProtection {
         }
         if (!station.canPlayerAccess(event.getEntity())) {
             event.setCanceled(true);
+            NetworkInteractionProtection.resyncDeniedInteraction(event.getLevel(), event.getPos(), event.getEntity());
         } else if (isProtected(event.getLevel(), event.getPos())) {
             // Item use runs before block activation, allowing packing tools to bypass block checks.
             event.setUseItem(TriState.FALSE);
@@ -75,6 +76,7 @@ public final class StationProtection {
                 && !((SecurityStationBlockEntity) event.getLevel().getBlockEntity(event.getPos()))
                         .canPlayerAccess(event.getEntity())) {
             event.setCanceled(true);
+            NetworkInteractionProtection.resyncDeniedInteraction(event.getLevel(), event.getPos(), event.getEntity());
         }
     }
 
@@ -84,6 +86,7 @@ public final class StationProtection {
                 && !((SecurityStationBlockEntity) event.getLevel().getBlockEntity(event.getPos()))
                         .canPlayerAccess(event.getPlayer())) {
             event.setCanceled(true);
+            NetworkInteractionProtection.resyncDeniedInteraction(event.getLevel(), event.getPos(), event.getPlayer());
         }
     }
 

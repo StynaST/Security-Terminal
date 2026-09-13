@@ -20,6 +20,7 @@ import appeng.parts.CableBusContainer;
 
 import net.styna.ae2securityterminal.api.SecurityConnectionException;
 import net.styna.ae2securityterminal.security.SecurityChecks;
+import net.styna.ae2securityterminal.security.NetworkInteractionProtection;
 
 @Mixin(CableBusContainer.class)
 public abstract class CableBusContainerMixin {
@@ -40,6 +41,11 @@ public abstract class CableBusContainerMixin {
     @WrapMethod(method = "addPart")
     private IPart securityterminal$removeRefusedPart(IPartItem<?> partItem, Direction side, @Nullable Player player,
             Operation<IPart> original) {
+        var blockEntity = ((CableBusContainer) (Object) this).getBlockEntity();
+        if (player != null && blockEntity.getLevel() != null
+                && !NetworkInteractionProtection.canPlaceAt(blockEntity.getLevel(), blockEntity.getBlockPos(), player)) {
+            return null;
+        }
         var previous = this.securityterminal$connectionRefused;
         this.securityterminal$connectionRefused = false;
         try {

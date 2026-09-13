@@ -45,6 +45,7 @@ import net.styna.ae2securityterminal.item.BiometricProfile;
 import net.styna.ae2securityterminal.menu.SecurityStationMenu;
 import net.styna.ae2securityterminal.security.SecurityService;
 import net.styna.ae2securityterminal.security.StationProtection;
+import net.styna.ae2securityterminal.security.NetworkInteractionProtection;
 
 @Mod(SecurityTerminal.MODID)
 public class SecurityTerminal {
@@ -102,6 +103,7 @@ public class SecurityTerminal {
         modEventBus.addListener(this::addCreative);
         modEventBus.addListener(this::registerCapabilities);
         NeoForge.EVENT_BUS.register(new StationProtection());
+        NeoForge.EVENT_BUS.register(new NetworkInteractionProtection());
     }
 
     public static Identifier id(String path) {

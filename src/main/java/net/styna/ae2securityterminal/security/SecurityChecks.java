@@ -151,6 +151,10 @@ public final class SecurityChecks {
     }
 
     public static boolean canOpen(MenuType<?> menuType, Object host, Player player) {
+        if (host instanceof IActionHost actionHost
+                && !hasPlayerPermission(actionHost.getActionableNode(), player, SecurityPermissions.BUILD)) {
+            return false;
+        }
         if (host instanceof SecurityStationBlockEntity station) {
             return station.canPlayerAccess(player);
         }
